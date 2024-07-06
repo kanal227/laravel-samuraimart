@@ -46,6 +46,8 @@ class ProductController extends Controller
         $product->price = $request->input('price');
         $product->category_id = $request->input('category_id');
         $product->save();
+
+        return to_route('products.index');
     }
 
     /**
