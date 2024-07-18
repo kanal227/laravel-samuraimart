@@ -4,7 +4,7 @@
 <div class="container">
   <h1>商品情報更新</h1>
 
-  <form action="{{ route('products.uopdate',$product->id) }}" method="POST">
+  <form action="{{ route('products.update',$product->id) }}" method="POST">
     @csrf
     @method('PUT')
     <div class="form-group">

@@ -12,7 +12,7 @@
     </div>
     <div class="form-group">
       <label for="product-description">商品説明</label>
-      <textarea name="description" id="product-description" class="form-control">
+      <textarea name="description" id="product-description" class="form-control"></textarea>
     </div>
     <div class="form-group">
       <label for="product-price">価格</label>
