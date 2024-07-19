@@ -56,6 +56,12 @@
           </div>
         </div>
       </form>
+      <form id="favorites-destroy-form" action="{{ route('favorites.destroy', $product->id) }}" method="POST" class="d-none">
+        @csrf
+        @method('DELETE')
+      </form>
+      <form id="favorites-store-form" action="{{ route('favorites.store', $product->id) }}" method="POST" class="d-none">
+        @csrf
       @endauth
     </div>
 
